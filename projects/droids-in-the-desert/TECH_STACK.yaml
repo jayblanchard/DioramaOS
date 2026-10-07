@@ -1,0 +1,23 @@
+controller:
+  board: Arduino Nano
+  mcu: ATmega328P
+
+power:
+  input: 12VDC
+  regulator: LM2596
+  logic_voltage: 5VDC
+
+sound:
+  player: DFPlayer Mini
+  amplifier: PAM8302A
+  speaker: 8 ohm
+
+effects:
+  lights:
+    - R2-D2
+    - C-3PO
+  sounds:
+    - C-3PO dialogue
+    - R2-D2 responses
+  
+  animations: []
