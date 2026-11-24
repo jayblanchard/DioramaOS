@@ -8,6 +8,14 @@ It provides reusable hardware and software patterns for adding electronic effect
 
 DioramaOS is not an end unto itself.
 
+Make the electronics easier so model builders can spend more time telling stories.
+
+That's the mission.
+
+And it also gives us a useful test for every feature we consider:
+
+Does this make the builder's job easier, or does it just make the board more interesting to an engineer?
+
 **The story comes first.**
 
 Technology exists to support the model, the scene, and the story being told. A feature that is technically impressive but adds nothing meaningful to the experience should be questioned.

@@ -1,11 +1,24 @@
+/*
+ * Name:    Droid in The Dessert - What are we even doing here?
+ * Author:  Jay Blanchard
+ * Date:    Nov 2026
+ * Board:   Arduino Nano
+ *
+ * Audio:     DFPlayer Mini, BUSY-driven state machine.
+ * Animation: 5V 28BYJ-48 + ULN2003, nonblocking half-step sequencing.
+ *            Nano: IN1=D2, IN2=D3, IN3=D4, IN4=D5.
+ *            Keep the motor on its separate regulated 5V supply, with common GND.
+ * 
+ * Usage:   The sketch handles the ask and response between R2D2 and C3PO 
+ *          where 3PO issues a complaint (randomly) 
+ *          and R2 responds (randomly). A motor driver turns R2's dome during that exchange.
+ *          Other, non-connected, devices (LEDs) are directly powered.
+ *          
+ */
 #include <SoftwareSerial.h>
 #include <DFRobotDFPlayerMini.h>
 
-// DioramaOS: Droids in the Desert
-// Audio: DFPlayer Mini, BUSY-driven state machine.
-// Animation: 5V 28BYJ-48 + ULN2003, nonblocking half-step sequencing.
-// Nano: IN1=D2, IN2=D3, IN3=D4, IN4=D5.
-// Keep the motor on its separate regulated 5V supply, with common GND.
+
 
 // Hardware connections
 constexpr uint8_t DFPLAYER_RX_PIN = 10;
